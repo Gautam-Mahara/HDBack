@@ -95,5 +95,3 @@ You can use Postman or Thunder Client to test API endpoints locally.
 🧑‍💻 Author
 
 Gautam Singh Mahara
-📧 [Your Email Here]
-💼 [LinkedIn or GitHub Profile Link]
