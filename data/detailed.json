@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "title": "Kayaking",
+    "location": "Udupi, Karnataka",
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e", 
+    "description": "Curated small-group experience. Certified guide. Safety first with gear included.",
+        "slots":[
+      {"date": "2024-07-01", "available": 10},
+      {"date": "2024-07-02", "available": 8},
+      {"date": "2024-07-03", "available": 5}
+    ]   
+  },
+  {
+    "id": "2",
+    "title": "Nandi Hills Sunrise",
+    "location": "Bangalore",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470", 
+    "description": "Enjoy the peaceful sunrise with breathtaking views. Certified local guide included."
+  },
+  {
+    "id": "3",
+    "title": "Coffee Trail",
+    "location": "Coorg",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1526401485004-2fda9f2c8b8b", 
+    "description": "Walk through aromatic coffee plantations with a local guide. Includes tasting session."
+  },
+  {
+    "id": "4",
+    "title": "Mountain Trek",
+    "location": "Manali, Himachal Pradesh",
+    "price": 1599,
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee", 
+    "description": "Adventure through snow-capped trails with professional trekkers."
+  },
+  {
+    "id": "5",
+    "title": "Desert Safari",
+    "location": "Jaisalmer, Rajasthan",
+    "price": 1399,
+    "image": "https://images.unsplash.com/photo-1544986581-efac024faf62",
+    "description": "Ride through golden dunes with camel rides and a sunset dinner.",
+    "slots":[
+      {"date": "2024-07-01", "available": 10},
+      {"date": "2024-07-02", "available": 8},
+      {"date": "2024-07-03", "available": 5}
+    ]   
+  }
+]
