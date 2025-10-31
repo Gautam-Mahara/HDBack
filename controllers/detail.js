@@ -40,7 +40,7 @@ exports.detail = async (req, res) => {
     const { id } = req.params;
     console.log("Requested Adventure ID:", id);
 
-    // 1️⃣ Fetch adventure details
+    //  Fetch adventure details
     const adventure = await adventureModel.findOne({ id });
     if (!adventure) {
       return res.status(404).json({ message: 'Adventure not found' });
@@ -49,14 +49,14 @@ exports.detail = async (req, res) => {
     // Use adventure’s total seats or fallback
     const totalSeats = adventure.totalSeats || 8;
 
-    // 2️⃣ Generate slots for upcoming 7 days
+    //  Generate slots for upcoming 7 days
     const generatedSlots = generateSlots(7, totalSeats);
 
-    // 3️⃣ Fetch all bookings for this adventure
+    //  Fetch all bookings for this adventure
     const bookedSlots = await bookedSlotModel.find({ adventureId: id });
     console.log("Booked slots found:", bookedSlots.length);
 
-    // 4️⃣ Compute available seats for each slot
+    //  Compute available seats for each slot
     const updatedSlots = generatedSlots.map(slot => {
       // Sum all booked seats for this exact date & time
       const totalBookedSeats = bookedSlots
@@ -75,11 +75,12 @@ exports.detail = async (req, res) => {
     });
 
     // 5️⃣ Filter slots: only show future (today onward)
-    const now = new Date();
-    const availableSlots = updatedSlots.filter(slot => {
-      const slotDateTime = new Date(`${slot.date}T${slot.time}:00`);
-      return slotDateTime >= now; // only future slots
-    });
+const now = new Date();
+const availableSlots = updatedSlots.filter(slot => {
+  const slotDateTime = new Date(`${slot.date}T${slot.time}:00`);
+  // Only keep if slot is after the current moment
+  return slotDateTime > now;
+});
 
     // 6️⃣ Return full adventure details with all computed slots
     res.status(200).json({
