@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
+// const path = require('path');
 const adventureRoutes = require('./routes/adventureRoutes');
 const mongoose = require('mongoose');
 const paymentRoutes = require('./routes/paymentroutes')
-const { url } = require('inspector');
+// const { url } = require('inspector');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -16,8 +16,8 @@ console.log('request');
 const MONGO_URI = process.env.MONGO_URL;
 app.use(cors({
   origin: [
-    'http://localhost:5173',      // ✅ for local dev
-    'https://hd-front.vercel.app' // ✅ your deployed frontend
+    'http://localhost:5173',      
+    'https://hd-front.vercel.app' 
   ],
   credentials: true, // (optional) if you're sending cookies/auth
 }));

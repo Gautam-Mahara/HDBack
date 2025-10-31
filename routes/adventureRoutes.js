@@ -9,6 +9,6 @@ const { searchQuery } = require('../controllers/searchController');
 router.get('/', getAdventures);
 // router.post('/', upload.single('image'), uploadAdventure);
 router.get("/search", searchQuery);
-router.get('/:id', detail); // ✅ corrected
+router.get('/:id', detail); 
 
 module.exports = router;

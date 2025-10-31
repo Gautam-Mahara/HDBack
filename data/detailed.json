@@ -1,52 +1,132 @@
 [
   {
-    "id": "1",
-    "title": "Kayaking",
-    "location": "Udupi, Karnataka",
-    "price": 999,
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e", 
-    "description": "Curated small-group experience. Certified guide. Safety first with gear included.",
-        "slots":[
-      {"date": "2024-07-01", "available": 10},
-      {"date": "2024-07-02", "available": 8},
-      {"date": "2024-07-03", "available": 5}
-    ]   
+    "id": "7",
+    "title": "Bungee Jumping",
+    "location": "Rishikesh, Uttarakhand",
+    "price": 2999,
+    "image": "https://images.unsplash.com/photo-1601655544168-2c4b9a98f4f7",
+    "description": "Leap from India's highest bungee platform and experience the ultimate adrenaline rush.",
+    "slots": [
+      { "date": "2025-11-07", "time": "09:30 AM", "available": true },
+      { "date": "2025-11-08", "time": "12:00 PM", "available": false },
+      { "date": "2025-11-08", "time": "03:00 PM", "available": true }
+    ]
   },
   {
-    "id": "2",
-    "title": "Nandi Hills Sunrise",
-    "location": "Bangalore",
-    "price": 899,
-    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470", 
-    "description": "Enjoy the peaceful sunrise with breathtaking views. Certified local guide included."
+    "id": "8",
+    "title": "Hot Air Balloon Ride",
+    "location": "Pushkar, Rajasthan",
+    "price": 2499,
+    "image": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d",
+    "description": "Float over the golden dunes and temples of Pushkar in a scenic sunrise balloon ride.",
+    "slots": [
+      { "date": "2025-11-09", "time": "06:00 AM", "available": true },
+      { "date": "2025-11-09", "time": "07:00 AM", "available": true },
+      { "date": "2025-11-10", "time": "06:30 AM", "available": false }
+    ]
   },
   {
-    "id": "3",
-    "title": "Coffee Trail",
-    "location": "Coorg",
+    "id": "9",
+    "title": "Caving Expedition",
+    "location": "Meghalaya",
+    "price": 1999,
+    "image": "https://images.unsplash.com/photo-1553028826-ccdfc006d8f8",
+    "description": "Explore the mysterious limestone caves of Meghalaya with professional guides and gear.",
+    "slots": [
+      { "date": "2025-11-11", "time": "09:00 AM", "available": true },
+      { "date": "2025-11-11", "time": "01:00 PM", "available": false },
+      { "date": "2025-11-12", "time": "09:00 AM", "available": true }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Snorkeling Adventure",
+    "location": "Goa",
+    "price": 1799,
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "description": "Swim among vibrant corals and colorful fish in the crystal-clear waters of Goa’s coastline.",
+    "slots": [
+      { "date": "2025-11-08", "time": "08:00 AM", "available": true },
+      { "date": "2025-11-08", "time": "10:30 AM", "available": true },
+      { "date": "2025-11-09", "time": "09:00 AM", "available": false }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Zip Lining",
+    "location": "Mussoorie, Uttarakhand",
     "price": 1299,
-    "image": "https://images.unsplash.com/photo-1526401485004-2fda9f2c8b8b", 
-    "description": "Walk through aromatic coffee plantations with a local guide. Includes tasting session."
+    "image": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b",
+    "description": "Glide above forest canopies and valleys with breathtaking Himalayan views.",
+    "slots": [
+      { "date": "2025-11-10", "time": "10:00 AM", "available": true },
+      { "date": "2025-11-10", "time": "01:00 PM", "available": true },
+      { "date": "2025-11-11", "time": "03:00 PM", "available": false }
+    ]
   },
   {
-    "id": "4",
-    "title": "Mountain Trek",
-    "location": "Manali, Himachal Pradesh",
+    "id": "12",
+    "title": "Rock Climbing",
+    "location": "Badami, Karnataka",
     "price": 1599,
-    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee", 
-    "description": "Adventure through snow-capped trails with professional trekkers."
+    "image": "https://images.unsplash.com/photo-1508261305434-1f3b6a20a3d7",
+    "description": "Climb the ancient sandstone cliffs of Badami with trained instructors and safety gear.",
+    "slots": [
+      { "date": "2025-11-13", "time": "07:00 AM", "available": true },
+      { "date": "2025-11-13", "time": "09:00 AM", "available": false },
+      { "date": "2025-11-14", "time": "08:00 AM", "available": true }
+    ]
   },
   {
-    "id": "5",
-    "title": "Desert Safari",
-    "location": "Jaisalmer, Rajasthan",
-    "price": 1399,
-    "image": "https://images.unsplash.com/photo-1544986581-efac024faf62",
-    "description": "Ride through golden dunes with camel rides and a sunset dinner.",
-    "slots":[
-      {"date": "2024-07-01", "available": 10},
-      {"date": "2024-07-02", "available": 8},
-      {"date": "2024-07-03", "available": 5}
-    ]   
+    "id": "13",
+    "title": "Camping under the Stars",
+    "location": "Pawna Lake, Maharashtra",
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2",
+    "description": "Relax by the lakeside with bonfire, BBQ, and stargazing — the perfect weekend getaway.",
+    "slots": [
+      { "date": "2025-11-08", "time": "06:00 PM", "available": true },
+      { "date": "2025-11-09", "time": "06:00 PM", "available": true },
+      { "date": "2025-11-10", "time": "06:00 PM", "available": false }
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Jungle Safari",
+    "location": "Jim Corbett National Park, Uttarakhand",
+    "price": 2199,
+    "image": "https://images.unsplash.com/photo-1547483238-2cb5ea82347d",
+    "description": "Spot tigers, elephants, and exotic birds in one of India’s oldest national parks.",
+    "slots": [
+      { "date": "2025-11-12", "time": "07:00 AM", "available": true },
+      { "date": "2025-11-12", "time": "03:00 PM", "available": true },
+      { "date": "2025-11-13", "time": "07:00 AM", "available": false }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Surfing Lessons",
+    "location": "Kovalam Beach, Kerala",
+    "price": 1899,
+    "image": "https://images.unsplash.com/photo-1516214104703-d870798883c5",
+    "description": "Learn to ride the waves with professional instructors at Kerala’s best surfing beach.",
+    "slots": [
+      { "date": "2025-11-06", "time": "09:00 AM", "available": true },
+      { "date": "2025-11-07", "time": "09:00 AM", "available": true },
+      { "date": "2025-11-07", "time": "02:00 PM", "available": false }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Mountain Biking Trail",
+    "location": "Manali, Himachal Pradesh",
+    "price": 1699,
+    "image": "https://images.unsplash.com/photo-1523978591478-c753949ff840",
+    "description": "Conquer thrilling mountain trails with top-quality bikes and experienced guides.",
+    "slots": [
+      { "date": "2025-11-09", "time": "07:00 AM", "available": true },
+      { "date": "2025-11-09", "time": "10:00 AM", "available": false },
+      { "date": "2025-11-10", "time": "07:30 AM", "available": true }
+    ]
   }
 ]
