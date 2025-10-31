@@ -14,7 +14,14 @@ const PORT = 5000;
 // Middleware
 console.log('request');
 const MONGO_URI = process.env.MONGO_URL;
-app.use(cors({ origin: 'http://localhost:5173' })); // Allow frontend requests
+app.use(cors({
+  origin: [
+    'http://localhost:5173',      // ✅ for local dev
+    'https://hd-front.vercel.app' // ✅ your deployed frontend
+  ],
+  credentials: true, // (optional) if you're sending cookies/auth
+}));
+
 app.use(express.json());
 //connect to MongoDB
 const connDB=mongoose.connect(MONGO_URI).then(() => {
