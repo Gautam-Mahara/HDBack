@@ -5,19 +5,19 @@ const adventureRoutes = require('./routes/adventureRoutes');
 const mongoose = require('mongoose');
 const paymentRoutes = require('./routes/paymentroutes')
 const { url } = require('inspector');
-
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
 const PORT = 5000;
 
 // Middleware
 console.log('request');
-
+const MONGO_URI = process.env.MONGO_URL;
 app.use(cors({ origin: 'http://localhost:5173' })); // Allow frontend requests
 app.use(express.json());
 //connect to MongoDB
-const connDB=mongoose.connect('mongodb+srv://Jenn:Janki6121@cluster0.vqk5j27.mongodb.net/TravelDb'
-).then(() => {
+const connDB=mongoose.connect(MONGO_URI).then(() => {
   console.log('Connected to MongoDB');
 }).catch((err) => {
   console.error('Error connecting to MongoDB', err);
